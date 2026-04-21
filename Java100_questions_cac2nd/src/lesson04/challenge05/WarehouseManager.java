@@ -32,27 +32,41 @@ public class WarehouseManager {
 
 	public static void main(String[] args) {
 
-
 		//ここに配列の宣言を記述する
-
+		int[] fukuro = new int[5];
 
 		int intputNum = 0;
 		boolean loopFlag = false;
+		for (int i = 0; i < fukuro.length; i++) {
+			do {
+				loopFlag = false;
+				intputNum = (int) (Math.random() * 10) % 5 + 1;
 
+				//ここに重複チェックおよび値の代入処理を記述する
+				for (int j = 0; j < fukuro.length; j++) {
+					if (fukuro[j] == intputNum) {
+						loopFlag = true;
+						break;
+					}
+				}
 
-		//ここに重複チェックおよび値の代入処理を記述する
+			} while (loopFlag);
 
-
+			fukuro[i] = intputNum;
+		}
 		System.out.println("E主任：");
 		System.out.println("AB興産の荷物の検査結果を教えてください。\n");
 
 		System.out.println("Yさん：");
 		System.out.println("はい、");
 
-
 		//ここに要素の確認および何袋目かの出力処理を記述する
+		for (int i = 0; i < fukuro.length; i++) {
+			if (fukuro[i] == 5) {
+				System.out.println((i + 1) + "袋目");
+			}
 
-
+		}
 		System.out.println("に入っていました。");
 
 	}
