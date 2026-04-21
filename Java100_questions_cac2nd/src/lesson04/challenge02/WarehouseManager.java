@@ -98,18 +98,19 @@ public class WarehouseManager {
 
 		//ここに入力処理を記述する。
 
-
+		int num1 = Integer.parseInt(br.readLine());
 		System.out.print("\n要素数を選んでください（1...1個、2...2個、3...3個）＞");
 
 
 		//ここに入力処理を記述する。
 
-
+		int num2 = Integer.parseInt(br.readLine());
 		boolean errFlag = false;
 
 
 		//ここに入力値の範囲チェック処理を記述する。
-
+		if ((num1 < 1 || num1> 3) || (num1< 1 || num1 > 3)) {
+			errFlag = true;}
 
 		if (!errFlag) {
 			System.out.println("\nZ先輩：");
@@ -129,6 +130,11 @@ public class WarehouseManager {
 
 			//ここに入力値による分岐および配列要素数の確定、
 			//値の代入処理を記述する。
+if(num1==1) {if(num2=1) {charArray=new char[1];
+charArray[0]='a'}
+else if(num2=2){charArray= {'a','b'};}
+else {charArray= {'a','b','c'};}
+}
 
 
 			System.out.println("Yさん：");
