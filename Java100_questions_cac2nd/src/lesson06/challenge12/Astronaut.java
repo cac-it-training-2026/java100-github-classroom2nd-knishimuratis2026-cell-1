@@ -47,7 +47,7 @@ class Omegalian {
 
 	}
 
-}
+}aaa
 
 public class Astronaut {
 
