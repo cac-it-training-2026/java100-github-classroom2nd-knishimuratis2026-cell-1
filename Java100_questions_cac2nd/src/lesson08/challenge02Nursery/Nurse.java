@@ -1,6 +1,6 @@
-package lesson08.challenge01;
+package lesson08.challenge02Nursery;
 
-class Nurse {
+public class Nurse {
 	private String name;
 
 	public Nurse(String name) {
