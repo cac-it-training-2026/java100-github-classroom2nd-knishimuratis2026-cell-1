@@ -1,4 +1,4 @@
-package lesson08.challenge02Nursery;
+package lesson08.challenge03;
 
 public class NurserySchool1 {
 
