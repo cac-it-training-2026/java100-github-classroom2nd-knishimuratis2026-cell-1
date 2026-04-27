@@ -55,10 +55,6 @@ class Retainer extends Samurai implements ICelebrity {
 		System.out.println("茶道を嗜むよ～。");
 	}
 
-	
-		
-	}
-
 }
 
 //ここにRoninクラスを記述
