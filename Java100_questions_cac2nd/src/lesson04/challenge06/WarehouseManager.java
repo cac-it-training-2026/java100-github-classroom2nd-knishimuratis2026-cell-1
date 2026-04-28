@@ -76,13 +76,13 @@ public class WarehouseManager {
 		//ここに値の入れ替え処理を記述する
 		for (int i = 0; i < ABKosanArray.length; i++) {
 
-			if (ABKosanArray[i] = 1) {
+			if (ABKosanArray[i] == 1) {
 				ABKosanArray[i] = 3;
-			} else if (ABKosanArray[i] = 3) {
+			} else if (ABKosanArray[i] == 3) {
 				ABKosanArray[i] = 1;
-			} else if (ABKosanArray[i] = 2) {
+			} else if (ABKosanArray[i] == 2) {
 				ABKosanArray[i] = 4;
-			} else if (ABKosanArray[i] = 4) {
+			} else if (ABKosanArray[i] == 4) {
 				ABKosanArray[i] = 2;
 			}
 
