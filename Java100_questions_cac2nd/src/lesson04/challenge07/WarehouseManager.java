@@ -78,6 +78,15 @@ public class WarehouseManager {
 		System.out.println("\nです。\n");
 
 		//ここに昇順にソートする処理を記述する
+		for (int i = 0; i < ABKosanArray.length - 1; i++) {
+			for (int j = i + 1; j < ABKosanArray.length; j++) {
+				if (ABKosanArray[i] > ABKosanArray[j]) {
+					int temp = ABKosanArray[i];
+					ABKosanArray[i] = ABKosanArray[j];
+					ABKosanArray[j] = temp;
+				}
+			}
+		}
 
 		System.out.println("小さい順に並べ替えた後の状態は、");
 		for (int i = 0; i < ABKosanArray.length; i++) {
@@ -89,7 +98,15 @@ public class WarehouseManager {
 		System.out.println("\nです。\n");
 
 		//ここに降順にソートする処理を記述する
-
+		for (int i = 0; i < ABKosanArray.length - 1; i++) {
+			for (int j = i + 1; j < ABKosanArray.length; j++) {
+				if (ABKosanArray[i] < ABKosanArray[j]) {
+					int temp = ABKosanArray[i];
+					ABKosanArray[i] = ABKosanArray[j];
+					ABKosanArray[j] = temp;
+				}
+			}
+		}
 		System.out.println("大きい順に並べ替えた後の状態は、");
 		for (int i = 0; i < ABKosanArray.length; i++) {
 			System.out.print(ABKosanArray[i]);
