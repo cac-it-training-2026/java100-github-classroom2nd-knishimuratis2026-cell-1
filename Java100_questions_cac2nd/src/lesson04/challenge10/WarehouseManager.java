@@ -61,12 +61,27 @@ public class WarehouseManager {
 
 	public static void main(String[] args) {
 
-
 		//ここに必要な配列の宣言を記述する。
-
+		int[] arrayC = new int[5];
+		int[] arrayD = new int[5];
+		int[] arrayE = new int[5];
 
 		//ここに配列に値を代入する処理を記述する。(要素はランダム)
+		int[][] MQArrayAll = new int[3][5];
+		MQArrayAll[0] = arrayC;
+		MQArrayAll[1] = arrayD;
+		MQArrayAll[2] = arrayE;
 
+		for (int i = 0; i < MQArrayAll.length; i++) {
+			for (int j = 0; j < MQArrayAll[0].length; j++) {
+				int rand = (int) (Math.random() * 10) % 4;
+				if (rand == 0) {
+					MQArrayAll[i][j] = 0;
+				} else {
+					MQArrayAll[i][j] = (int) (Math.random() * 10) % 10 + 1;
+				}
+			}
+		}
 
 		System.out.println("E主任：");
 		System.out.println("MQ運送から預かった荷物の確認をお願いします。\n");
@@ -76,22 +91,23 @@ public class WarehouseManager {
 
 		System.out.print("C...");
 
-
 		//ここに配列Cの要素をすべて出力する処理を記述する。
-
+		for (int i : arrayC) {
+			System.out.print(i);
+		}
 
 		System.out.print("\n\nD...");
 
-
 		//ここに配列Dの要素をすべて出力する処理を記述する。
-
-
+		for (int j : arrayD) {
+			System.out.print(j);
+		}
 		System.out.print("\n\nE...");
 
-
 		//ここに配列Eの要素をすべて出力する処理を記述する。
-
-
+		for (int i : arrayE) {
+			System.out.print(i);
+		}
 		System.out.println("\n\nです。\n");
 
 		System.out.println("E主任：");

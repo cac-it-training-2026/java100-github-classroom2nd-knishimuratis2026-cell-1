@@ -11,7 +11,7 @@
  * コメントの位置にfor文を利用した処理を記述して
  * 実行例と同じメッセージを表示してください。
  *
- * <実行例>
+ * <実行例
  *  隊長：
  *  サバ缶を50個以上袋に詰めてください。
  *
@@ -61,9 +61,13 @@ public class Explorer {
 		int targetCans = 50;
 		int inputCans = 0;
 
+		for (int i = 0; i < 3; i++) {
+			System.out.print("隊長:\nあと" + (3 - i) + "回！\n袋に何個入れますか＞");
 
+			int num = Integer.parseInt(br.readLine());
+			inputCans += num;
+		}
 		//ここにfor文を利用した処理を記述
-
 
 		if (inputCans >= targetCans) {
 			System.out.println("\n隊長：");

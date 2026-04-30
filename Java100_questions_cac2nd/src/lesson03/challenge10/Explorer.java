@@ -82,7 +82,11 @@ public class Explorer {
 
 
                 //ここにfor文のネスト、if文を利用した処理を記述する。
-
+for (int i = 0; i < args.length; i++) {
+	String string = args[i];
+	
+}
+}
 
         }
 }
